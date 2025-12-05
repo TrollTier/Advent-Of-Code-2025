@@ -23,6 +23,9 @@
             long freshIdsCount = 0;
             var uniqueRanges = GetMergedRanges(freshRanges);
 
+            // Since we sometimes replace ranges that are completely covered by other ranges
+            // those can then overlap with others that have been merged at some point. 
+            // So we clean that up here.
             while (HasOverlaps(uniqueRanges))
             {
                 uniqueRanges = GetMergedRanges(uniqueRanges);
