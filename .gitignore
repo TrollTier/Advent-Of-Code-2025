@@ -418,3 +418,5 @@ FodyWeavers.xsd
 *.msp
 /AoC2025/Data/4a.txt
 /AoC2025/Data/TestData4a.txt
+/AoC2025/Data/5a.txt
+/AoC2025/Data/TestData5a.txt
